@@ -59,17 +59,32 @@ npm run dev
 ## Project Structure
 
 \`\`\`
-src/
-├── app/                 # Next.js app router pages
-├── components/          # Reusable UI components
-│   ├── CaseCard.tsx
-│   ├── CaseResults.tsx
-│   ├── SearchPanel.tsx
-│   └── ...
-├── types/               # TypeScript type definitions
-├── lib/                 # Utility functions and mock data
-├── hooks/               # Custom React hooks
-└── ...
+lexi-case-tracker/
+ ├── src/
+ │   ├── app/
+ │   │   ├── globals.css
+ │   │   ├── layout.tsx
+ │   │   └── page.tsx
+ │   ├── components/
+ │   │   ├── CaseCard.tsx
+ │   │   ├── CaseResults.tsx
+ │   │   ├── CommissionSelector.tsx
+ │   │   ├── ErrorMessage.tsx
+ │   │   ├── LoadingSpinner.tsx
+ │   │   ├── SearchPanel.tsx
+ │   │   ├── SearchTypeTabs.tsx
+ │   │   └── StateSelector.tsx
+ │   ├── types/
+ │   │   └── index.ts
+ │   ├── lib/
+ │   │   ├── mockData.ts
+ │   │   └── searchLogic.ts
+ │   └── hooks/
+ │       
+└── useSearch.ts
+ ├── public/
+ ├── README.md
+ └── package.json
 \`\`\`
 
 ## Building for Production
